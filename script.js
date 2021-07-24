@@ -74,8 +74,9 @@ class ProductInCart extends Product {
     }
 }
 class CatalogList {
-    constructor(product, target, cartList) { //массив продуктов, место куда рендерить, массив корзины
-        this.product = product.sort((f, s) => f.id - s.id);
+    constructor(product, target, cartList, filter = '.*') { //массив продуктов, место куда рендерить, массив корзины
+        filter = new RegExp(filter, 'i');
+        this.product = product.sort((f, s) => f.id - s.id).filter(e => filter.test(e.title));
         this.target = target;
         this.cartList = cartList;
     }
@@ -84,6 +85,10 @@ class CatalogList {
         this.product.forEach(e => { x += e.price });
         return x;
     }
+    clearSelf() {
+        this.target.innerHTML = '';
+        this.product.length = 0;
+    };
     render() {
         let prList = this.product.map(item => item.render()).join('');
         this.target.insertAdjacentHTML('afterbegin', prList);
@@ -127,7 +132,7 @@ class CartList extends CatalogList {
         let x = this.amount();
         x == 0 ? $cartAmountDOM.innerHTML = '' : $cartAmountDOM.innerHTML = `&nbsp&nbsp${x}&nbsp&nbsp`;
     }
-    clearCart() {
+    clearSelf() {
         this.target.innerHTML = '';
         this.product.length = 0;
         this.renderTotal();
@@ -150,13 +155,22 @@ class CartList extends CatalogList {
     }
 
 }
-
+function executeSearch(e) {  //выполнение поиска товара
+    e.preventDefault();
+    let seReg = new RegExp($searchInputDOM.value);
+    console.log(seReg);
+    catalogList.then(r => r.clearSelf());
+    catalogList = $productArray.then(r => { return r = new CatalogList(r, $catalogDOM, cartList, seReg) });
+    catalogList.then(r => r.render());
+}
 
 //Создаю список корзины
 let cartList = new CartList([], $cartItemsDOM);
 //Создаю список католога и рендерю продукты
-const $catalogList = $productArray.then(r => { return r = new CatalogList(r, $catalogDOM, cartList) });
-$catalogList.then(r => r.render());
-//добавляю собитие на кнопку очищения корзины 
-$cartClearDOM.onclick = function () { cartList.clearCart() };
+let catalogList = $productArray.then(r => { return r = new CatalogList(r, $catalogDOM, cartList) });
+catalogList.then(r => r.render());
+//добавляю событие на кнопку очищения корзины 
+$cartClearDOM.onclick = function () { cartList.clearSelf() };
+//Событие на кнопку поиска
+$searchFormDOM.addEventListener('submit', e => executeSearch(e));
 
