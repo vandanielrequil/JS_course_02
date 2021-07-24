@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,7 +16,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="header__box">
             <div class="header__left">
@@ -58,10 +58,10 @@
                             </div>
                         </details>
                     </div>
-                    <form action="#">
+                    <form class="search__form">
                         <div class="search">
-                            <input class="search__input" type="text" placeholder="Search for item...">
-                            <button class="search__magnifier" type="submit">
+                            <input name="search" class="search__input" type="search" placeholder="Search for item...">
+                            <button name="search" class="search__magnifier" type="submit">
                                 <img src="img/magnifier.png" alt="magnifier">
                             </button>
                         </div>
@@ -69,28 +69,31 @@
                 </div>
             </div>
             <div class="header__right">
-                <details class="cart">
-                    <summary class="cart__summary"><img src="img/cart.png" alt="cart">
-                    </summary>
-                    <div class="cart__box">
-                        <div class="cart__cell last_in_col">
-                            <div class="cart__total">
-                                <div class="cp">TOTAL</div>
-                                <div class="cp">$500.00</div>
+                <div class="cart">
+                    <div class="cart__amount"></div>
+                    <details class="cart__details">
+                        <summary class="cart__summary"><img src="img/cart.png" alt="cart">
+                        </summary>
+                        <div class="cart__box">
+                            <div class="cart__items">
                             </div>
-                            <a href="checkout.html">
-                                <div class="cart__button">
-                                    checkout
+                            <div class="last_in_col">
+                                <div class="cart__total">
+                                    <div class="cp">TOTAL</div>
+                                    <div class="cart__total_price cp">$0.00</div>
                                 </div>
-                            </a>
-                            <a href="shopping_cart.html">
-                                <div class="cart__button last_in_col">
+                                <!-- <a href="shopping_cart.html"> -->
+                                <div class="cart__button">
                                     go to cart
                                 </div>
-                            </a>
+                                <!-- </a> -->
+                                <button class="cart__clear">
+                                    CLEAR Cart
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </details>
+                    </details>
+                </div>
                 <a href="#">
                     <div class="buttonPink">
                         <div class="buttonPink__text">

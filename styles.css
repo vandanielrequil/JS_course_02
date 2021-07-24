@@ -185,11 +185,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .cart {
-  margin: 0 14px 0 0;
   position: relative;
+}
+
+.cart__details {
+  margin: 0 14px 0 0;
 }
 
 .cart__summary {
@@ -200,6 +204,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .cart__box {
@@ -295,6 +300,11 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
+  cursor: pointer;
+}
+
+.cart__name:hover {
+  color: #f16d7f;
 }
 
 .cart__stars {
@@ -305,19 +315,44 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #e4af48;
+  cursor: pointer;
 }
 
 .cart__stars .fa-star {
   margin-right: -2px;
 }
 
-.cart__amount {
+.cart__purchase {
   display: block;
   margin: 5px 0;
   font-size: 12px;
   line-height: 1.2;
   font-weight: 600;
-  color: #f16d7f;
+  color: #222222;
+}
+
+.cart__amount {
+  position: absolute;
+  border-radius: 15px;
+  z-index: 6;
+  max-width: 21px;
+  max-height: 21px;
+  top: -9px;
+  left: 17px;
+  background-color: #f16d7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .cart__cross {
@@ -325,7 +360,10 @@
   line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
+  background: unset;
+  border: unset;
   color: #c0c0c0;
+  cursor: pointer;
 }
 
 .cart__cross:hover {
@@ -352,12 +390,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 225px;
   height: 50px;
   border: 1px solid #eaeaea;
@@ -366,6 +404,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #4a4a4a;
+  cursor: pointer;
 }
 
 .cart__button:hover {
@@ -373,7 +412,45 @@
   color: #f16d7f;
 }
 
+.cart__clear {
+  margin-bottom: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 225px;
+  height: 50px;
+  border: unset;
+  background-color: unset;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  cursor: pointer;
+}
+
+.cart__clear:hover {
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+}
+
 .cart .last_in_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 0;
 }
 
@@ -398,6 +475,7 @@
   line-height: 32px;
   letter-spacing: 0.025em;
   border: none;
+  cursor: pointer;
 }
 
 .buttonPink__text {
@@ -670,6 +748,7 @@
   border: 1px solid #ffffff;
   background-color: unset;
   z-index: 99;
+  cursor: pointer;
 }
 
 .addToCart__text {
