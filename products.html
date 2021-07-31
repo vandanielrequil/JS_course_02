@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b0c23b5d6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="header__box">
+                <div class="header__left">
+                    <a href="index.html">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="Logo Brand">
+                            <div class="logo__font">BRAN<span class="logo__font_lastletter">D</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="header__searchNbrowse">
+                        <div class="browse">
+                            <details class="browse__details">
+                                <summary class="browse__summary">Browse</summary>
+                                <div class="details">
+                                    <nav class="details__section"></nav>
+                                    <h3 class="details__item f_h3">WOMEN</h3>
+                                    <a class="details__item f_p1" href="#">Dresses</a>
+                                    <a class="details__item f_p1" href="#">Tops</a>
+                                    <a class="details__item f_p1" href="#">Sweaters/Knits</a>
+                                    <a class="details__item f_p1" href="#">Jackets/Coats
+                                        Blazers</a>
+                                    <a class="details__item f_p1" href="#">Blazers</a>
+                                    <a class="details__item f_p1" href="#">Denim</a>
+                                    <a class="details__item f_p1" href="#">Leggings/Pants</a>
+                                    <a class="details__item f_p1" href="#">Skirts/Shorts</a>
+                                    <a class="details__item f_p1" href="#">Accessories</a>
+                                    </nav>
+                                    <br>
+                                    <nav class="details__section">
+                                        <h3 class="details__item f_h3">MEN</h3>
+                                        <a class="details__item f_p1" href="#">Tees/Tank tops</a>
+                                        <a class="details__item f_p1" href="#">Shirts/Polos</a>
+                                        <a class="details__item f_p1" href="#">Sweaters</a>
+                                        <a class="details__item f_p1" href="#">Sweatshirts/Hoodies</a>
+                                        <a class="details__item f_p1" href="#">Blazers</a>
+                                        <a class="details__item f_p1" href="#">Denim</a>
+                                        <a class="details__item f_p1" href="#">Jackets/vests</a>
+                                    </nav>
+                                </div>
+                            </details>
+                        </div>
+                        <search-component></search-component>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <cart-component></cart-component>
+                    <a href="#">
+                        <div class="buttonPink">
+                            <div class="buttonPink__text">
+                                My Account
+                            </div>
+                            <div class="buttonPink__arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="outter-box1">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list_li"><a class="menu__list_item" href="#">HOME</a>
+                            <div class="menu__box">
+                                <div class="menu__box_column">
+                                    <nav class="menu__box_column_cell">
+                                        <h3 class="menu__box_column_cell_head f_h3">HOME</h3>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Dresses</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Tops</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Sweaters/Knits</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Jackets/Coats Blazers</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Blazers</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Denim</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Leggings/Pants</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Skirts/Shorts</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Accessories</a>
+                                    </nav>
+                                </div>
+                                <div class="menu__box_column">
+                                    <nav class="menu__box_column_cell">
+                                        <h3 class="menu__box_column_cell_head f_h3">HOME</h3>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Dresses </a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Tops</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Sweaters/Knits</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Jackets/Coats Blazers</a>
+                                    </nav>
+                                    <nav class="menu__box_column_cell">
+                                        <h3 class="menu__box_column_cell_head f_h3">HOME</h3>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Dresses </a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Tops</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Sweaters/Knits</a>
+                                    </nav>
+                                </div>
+                                <div class="menu__box_column menu__box_column_last">
+                                    <nav class="menu__box_column_cell">
+                                        <h3 class="menu__box_column_cell_head f_h3">HOME</h3>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Dresses </a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Tops</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Sweaters/Knits</a>
+                                        <a class="menu__box_column_cell_item f_p1" href="#">Jackets/Coats Blazers</a>
+                                    </nav>
+                                    <a href="#"><img class="menu__box_img" src="img/menu_box_guy.png" alt="Super Sale">
+                                        <div class="menu__box_img_text">Super<br>sale!</div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="menu__list_li"><a class="menu__list_item" href="#">MAN</a>
+                        </li>
+                        <li class="menu__list_li"><a class="menu__list_item" href="#">WOMEN</a>
+                        </li>
+                        <li class="menu__list_li"><a class="menu__list_item" href="#">KIDS</a>
+                        </li>
+                        <li class="menu__list_li menu__list_li_right"><a class="menu__list_item"
+                                href="#">ACCOSERIESE</a>
+                        </li>
+                        <li class="menu__list_li menu__list_li_right"><a class="menu__list_item" href="#">FEATURED</a>
+
+                        </li>
+                        <li class="menu__list_li menu__list_li_right"><a class="menu__list_item" href="#">HOT
+                                DEALS</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="breadcrum">
+                    <div class="flexbox pw">
+                        <a href="#">
+                            <h2 class="hc1">New Arrivals</h2>
+                        </a>
+                        <h2 class="f_h2"><a class="f_h2" href="#">Home</a> / <a class="f_h2" href="#1">Men</a> / <a
+                                href="#3">
+                                <span class="f_h2 pink-bold7">New Arrivals</span> </a></h2>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="contbox contbox_product">
+            <div class="flexbox mg-a flexbox_fstart">
+                <nav class="flexbox__column product-pg__col_1">
+                    <details class="details-common">
+                        <summary class="details-common__summary-burg hc9">
+                            <a href="#" class="lsi">CATEGORY</a>
+                            <img class="details-common__arrow" src="img/arrow-down-pink.png" alt="arrow open">
+                        </summary>
+                        <div class="details-common__content">
+
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Accessories</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Bags</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Denim</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Hoodies & Sweatshirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Jackets & Coats</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Pants</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Polos</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shoes</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shorts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Sweaters & Knits</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">T-Shirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Tanks</h6>
+                            </a>
+
+                        </div>
+                    </details>
+                    <details class="details-common mgtb20">
+                        <summary class="details-common__summary-burg hc9">
+                            <a href="#" class="lsi">BRAND</a>
+                            <img class="details-common__arrow" src="img/arrow-down-pink.png" alt="arrow open">
+                        </summary>
+                        <div class="details-common__content">
+
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Accessories</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Bags</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Denim</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Hoodies & Sweatshirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Jackets & Coats</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Pants</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Polos</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shoes</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shorts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Sweaters & Knits</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">T-Shirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Tanks</h6>
+                            </a>
+
+                        </div>
+                    </details>
+                    <details class="details-common mgtb20">
+                        <summary class="details-common__summary-burg hc9">
+                            <a href="#" class="lsi">DESIGNER</a>
+                            <img class="details-common__arrow" src="img/arrow-down-pink.png" alt="arrow open">
+                        </summary>
+                        <div class="details-common__content">
+
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Accessories</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Bags</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Denim</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Hoodies & Sweatshirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Jackets & Coats</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Pants</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Polos</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shoes</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Shorts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Sweaters & Knits</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">T-Shirts</h6>
+                            </a>
+                            <a href="#" class="lsi">
+                                <h6 class="p4c padrl16 font-pink-hover">Tanks</h6>
+                            </a>
+
+                        </div>
+                    </details>
+                </nav>
+                <div class="flexbox__column product-pg__col_2">
+                    <div class="flexbox flexbox_fstart">
+                        <div class="flexbox__cell flexbox__cell_triens">
+                            <h4 class="hc9">Size</h4>
+                            <br>
+                            <a href="#"><span
+                                    class="p6c font-pink-hover">Bohemian</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="light-grey">|</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span
+                                    class="p6c font-pink-hover">Floral</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="light-grey">|</span>&nbsp;&nbsp;&nbsp;<a href="#"><span
+                                    class="p6c font-pink-hover">Lace</span></a>
+                            <a href="#"><span class="p6c font-pink-hover">Lace</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="light-grey">|</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span
+                                    class="p6c font-pink-hover">Floral</span></a>&nbsp;&nbsp;&nbsp;&nbsp; <span
+                                class="light-grey">|</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="p6c font-pink-hover">Bohemian</span></a>
+                        </div>
+                        <div class="flexbox__cell flexbox__cell_triens">
+                            <h4 class="hc9">Trending now</h4>
+                            <br>
+                            <div class="flexbox flexbox_fstart flexbox_nojust">
+                                <div class="flexbox flexbox__column mgr25">
+                                    <div class="flexbox_aCjSB">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label class="p6c font-pink-hover" for="checkbox1">&nbsp;&nbsp;XXS</label>
+                                    </div>
+                                    <div class="flexbox_aCjSB"><input type="checkbox" id="checkbox2">
+                                        <label class="p6c font-pink-hover" for="checkbox2">&nbsp;&nbsp;L</label>
+                                    </div>
+                                </div>
+                                <div class="flexbox flexbox__column mgr25">
+                                    <div class="flexbox_aCjSB">
+                                        <input type="checkbox" id="checkbox3">
+                                        <label class="p6c font-pink-hover" for="checkbox3">&nbsp;&nbsp;XS</label>
+                                    </div>
+                                    <div class="flexbox_aCjSB"><input type="checkbox" id="checkbox4">
+                                        <label class="p6c font-pink-hover" for="checkbox4">&nbsp;&nbsp;XL</label>
+                                    </div>
+                                </div>
+                                <div class="flexbox flexbox__column mgr25">
+                                    <div class="flexbox_aCjSB">
+                                        <input type="checkbox" id="checkbox5">
+                                        <label class="p6c font-pink-hover" for="checkbox5">&nbsp;&nbsp;S</label>
+                                    </div>
+                                    <div class="flexbox_aCjSB"><input type="checkbox" id="checkbox6">
+                                        <label class="p6c font-pink-hover" for="checkbox6">&nbsp;&nbsp;XXL</label>
+                                    </div>
+                                </div>
+                                <div class="flexbox flexbox__column mgr25">
+                                    <div class="flexbox_aCjSB">
+                                        <input type="checkbox" id="checkbox7">
+                                        <label class="p6c font-pink-hover" for="checkbox7">&nbsp;&nbsp;M</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flexbox__cell flexbox__cell_triens">
+                            <h4 class="hc9">Price</h4>
+                            <br>
+                            <input type="range" id="range1" min="1" max="1000" step="10" class="mgtb5 width100">
+                            <div class="flexbox_aCjSB">
+                                <span class="p6c font-pink-hover">$52</span>
+                                <span class="p6c font-pink-hover">$400</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-box1 flexbox flexbox_nojust">
+                        <div class="button-common button-common_hover button-common_tiny2 p6c">Sort by</div>
+                        <details class="details-common width86px">
+                            <summary class="details-common__summary button-common_tiny2 p6c">Name
+                                <img class="details-common__arrow mgl13" src="img/arrow-down-pink.png" alt="arrow open">
+                            </summary>
+                            <div class="details-common__content details-common__content_abs ">
+                                <div class="details-common__summary bd-top-no button-common_tiny2 p6c font-pink-hover">
+                                    Size
+                                </div>
+                                <div class="details-common__summary bd-top-no button-common_tiny2 p6c font-pink-hover">
+                                    Date
+                                </div>
+                            </div>
+                        </details>
+                        &nbsp;&nbsp;
+                        <div class="button-common button-common_hover button-common_tiny2 p6c">Show</div>
+                        <details class="details-common width86px">
+                            <summary class="details-common__summary button-common_tiny2 p6c">09
+                                <img class="details-common__arrow mgl13" src="img/arrow-down.png" alt="arrow open">
+                            </summary>
+                            <div class="details-common__content details-common__content_abs ">
+                                <div class="details-common__summary bd-top-no button-common_tiny2 p6c font-pink-hover">
+                                    12
+                                </div>
+                                <div class="details-common__summary bd-top-no button-common_tiny2 p6c font-pink-hover">
+                                    18
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                    <!-- PRODUCTS -->
+                    <section class="catalog">
+
+
+                        <!-- <div class="catalog__cell">
+                        <div class="catalog__img"><img src="img/single_page/prod_asl_1.png" alt="item image">
+                            <div class="catalog__img_overlay">
+                                <button onclick="" class="addToCart">
+                                    <div class="addToCart__img"><img src="img/cart_white.png" alt="Cart logo"></div>
+                                    <div class="addToCart__text">Add to Cart</div>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="single_page.html">
+                            <h4 class="catalog__name f_h4">BLAZE LEGGINGS</h4>
+                        </a>
+                        <div class="f_h8 f_pink">$52.00</div>
+                    </div> -->
+
+                    </section>
+
+                    <!-- PRODUCTS END -->
+
+                    <nav class="flexbox_aCjSB">
+
+                        <div class="flexbox button-common button-common_tiny bd_round ">
+                            <a href="#1">
+                                <p class="p7c font-pink-hover"><i class="fa fa-angle-left"
+                                        aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c font-pink-hover">1&nbsp;&nbsp;&nbsp;</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c font-pink-hover">2&nbsp;&nbsp;&nbsp;</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c font-pink-hover">3&nbsp;&nbsp;&nbsp;</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c font-pink-hover">4&nbsp;&nbsp;&nbsp;</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c font-pink-hover">5&nbsp;&nbsp;&nbsp;</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c font-pink-hover">6</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c">.....</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c font-pink-hover">20&nbsp;&nbsp;&nbsp;</p>
+                            </a>
+                            <a href="#1">
+                                <p class="p7c font-pink-hover"><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                            </a>
+                        </div>
+                        <a href="#">
+                            <div class="button-common button-common_medium button-common_hover bd_round p7c">View All
+                            </div>
+                        </a>
+                    </nav>
+
+                </div>
+            </div>
+        </section>
+
+        <main class="product-sale flexbox_aCjSB">
+            <article class=" flexbox flexbox__column flexbox_center">
+                <a href="#">
+                    <img class="padb30" src="img/offer_i_1.png" alt="car">
+                    <h2 class="sale_col-right_item_col2_h">Free Delivery</h2>
+                    <p class="sale_col-right_item_col2_p text-a-c">
+                        Worldwide&nbsp;delivery&nbsp;on&nbsp;all.&nbsp;Authorit
+                        tively&nbsp;morph&nbsp;next-&nbsp;generation&nbsp;innov tion with extensive models.</p>
+                </a>
+            </article>
+
+            <article class="flexbox flexbox__column flexbox_center">
+                <a href="#">
+                    <img class="padb30" src="img/offer_i_2.png" alt="car">
+                    <h2 class="sale_col-right_item_col2_h">Sales & discounts</h2>
+                    <p class="sale_col-right_item_col2_p text-a-c">
+                        Worldwide&nbsp;delivery&nbsp;on&nbsp;all.&nbsp;Authorit
+                        tively&nbsp;morph&nbsp;next-&nbsp;generation&nbsp;innov tion with extensive models.</p>
+                </a>
+            </article>
+
+            <article class=" flexbox flexbox__column flexbox_center">
+                <a href="#">
+                    <img class="padb30" src="img/offer_i_3.png" alt="car">
+                    <h2 class="sale_col-right_item_col2_h">Quality assurance</h2>
+                    <p class="sale_col-right_item_col2_p text-a-c">
+                        Worldwide&nbsp;delivery&nbsp;on&nbsp;all.&nbsp;Authorit
+                        tively&nbsp;morph&nbsp;next-&nbsp;generation&nbsp;innov tion with extensive models.</p>
+                </a>
+            </article>
+        </main>
+
+        <footer>
+            <div class="quotes">
+                <div class="quotes_flex">
+                    <figure class="quotes_left">
+
+                        <div class="quotes_left_col1">
+                            <div class="quotes_left_col1_img"><img src="img/quote_girl.png" alt="Bin Burhan"></div>
+                        </div>
+                        <figcaption class="quotes_left_col2">
+                            <p class="quotes_left_col2_p">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                                mi,<br>
+                                a pulvinar purus condimentum a. Aliquam condimentum<br> mattis neque sed pretium”
+                            </p>
+                            <div class="quotes_left_col2_h2">Bin Burhan<br>
+                                <span class="quotes_left_col2_h2_span">Dhaka, Bd</span>
+                            </div>
+                            <nav class="quotes_left_col2_scroll">
+                                <a href="#1">
+                                    <nav class="quotes_left_col2_scroll_page bg-pink-hover" tabindex="1"></nav>
+                                </a>
+                                <a href="#1">
+                                    <nav class="quotes_left_col2_scroll_page bg-pink-hover" tabindex="2"></nav>
+                                </a>
+                                <a href="#1">
+                                    <nav class="quotes_left_col2_scroll_page bg-pink-hover" tabindex="3"></nav>
+                                </a>
+                            </nav>
+                        </figcaption>
+
+                    </figure>
+                    <div class="quotes_right">
+                        <h1 class="quotes_right_h1">Subscribe</h1>
+                        <p class="quotes_right_p">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form action="#" class="quotes_right_form">
+                            <input type="email" class="quotes_right_form_input" placeholder="Enter Your Email">
+                            <button class="quotes_right_form_button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_info">
+                <div class="footer_info_colm">
+                    <a href="index.html">
+                        <div class="header_box_left_logo">
+                            <img src="img/logo.png" alt="Logo Brand">
+                            <div class="header_box_left_logo_font">BRAN<span
+                                    class="header_box_left_logo_font_lastletter">D</span>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="footer_info_colm_p">
+                        Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                        expanded
+                        array of processes and cross-unit partnerships.
+                        <br><br>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively
+                        seize
+                        superior initiatives for wireless technologies. Dynamically optimize.
+                    </p>
+                </div>
+                <nav class="footer_info_coll">
+                    <div class="footer_info_coll_h3">COMPANY</div>
+                    <div class="footer_info_coll_p">
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Home<br> </a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Shop<br> </a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">About<br> </a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">How It Works<br> </a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Contact</a>
+                    </div>
+                </nav>
+                <nav class="footer_info_coll">
+                    <div class="footer_info_coll_h3">INFORMATION</div>
+                    <div class="footer_info_coll_pg">
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Tearms & Condition<br>
+                        </a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Privacy Policy<br> </a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">How to Buy<br> </a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">How to Sell<br> </a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Promotion</a>
+                    </div>
+                </nav>
+                <nav class="footer_info_coll">
+                    <div class="footer_info_coll_h3">SHOP CATEGORY</div>
+                    <div class="footer_info_coll_p">
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Men<br></a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Women<br></a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Child<br></a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Apparel<br></a>
+                        <a class="footer_info_coll_pg_p font-pink-hover flexbox-block" href="#">Brows All</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer_copy">
+                <div class="footer_copy_flex">
+                    <div class="footer_copy_flex_col1">&copy; 2017 Brand All Rights Reserved.</div>
+                    <div class="footer_copy_flex_col2">
+                        <a href="#">
+                            <div class="footer_copy_flex_col2_img">
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="footer_copy_flex_col2_img">
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="footer_copy_flex_col2_img">
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="footer_copy_flex_col2_img">
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="footer_copy_flex_col2_img">
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
